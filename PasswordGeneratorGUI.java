@@ -207,7 +207,7 @@ public class PasswordGeneratorGUI extends JFrame {
 
         // Generate button
         JButton generateButton = new JButton("Generate");
-        generateButton.setBounds(200, 675, 225, 50);
+        generateButton.setBounds(25, 575, 200, 50);
         generateButton.setFont(new Font("Dialog", Font.PLAIN, 26));
         generateButton.setBackground(Color.ORANGE);
         generateButton.addActionListener(new ActionListener() {
@@ -247,7 +247,7 @@ public class PasswordGeneratorGUI extends JFrame {
         JButton creditsPanel = new JButton("CREDITS");
         creditsPanel.setBackground(Color.BLACK);
         creditsPanel.setForeground(Color.ORANGE);
-        creditsPanel.setBounds(425, 675, 200, 26);
+        creditsPanel.setBounds(520, 710, 200, 50);
         creditsPanel.setFont(new Font("Dialog", Font.PLAIN, 26));
         add(creditsPanel);
 
@@ -295,16 +295,5 @@ public class PasswordGeneratorGUI extends JFrame {
 
         // Show the dialog
         creditsDialog.setVisible(true);
-    }
-
-    // Main method to launch the GUI
-    public static void main(String[] args) {
-        // Always launch Swing GUIs on the Event Dispatch Thread
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new PasswordGeneratorGUI();
-            }
-        });
     }
 }
